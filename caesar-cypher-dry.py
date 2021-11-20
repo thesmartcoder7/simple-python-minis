@@ -39,7 +39,7 @@ def caesar_cypher():
 
     if direction == "encode":
         text = input("\nType your message here:\n --: ").lower()
-        shift = int(input("\nKey in the shift number:\n --: "))
+        shift = int(input("\nKey in the shift number:\n --: ")) % 25
         shifted_alpha = alphabet[shift:] + alphabet[:shift]
     elif direction == "decode":
         text = input("\nType your message here:\n --: ").lower()
