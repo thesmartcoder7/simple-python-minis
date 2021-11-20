@@ -75,7 +75,7 @@ while run_again == True:
         "\nType 'encode' to encrypt your message or 'decode' to decrypt it:\n --: ").lower()
 
     text = input("\nType your message here:\n --: ").lower()
-    shift = int(input("\nKey in the shift number:\n --: "))
+    shift = int(input("\nKey in the shift number:\n --: ")) % 25
 
     if direction == "encode":
         encrypt(text=text, shift_n=shift)
