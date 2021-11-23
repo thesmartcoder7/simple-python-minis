@@ -1,7 +1,7 @@
 ############### Blackjack Project #####################
 
 import random
-from replit import clear
+import os
 
 logo = """
 
@@ -53,6 +53,11 @@ def user_deal(cards):
 
 def computer_deal(cards):
     return random.choice(cards)
+
+def clear():
+    os.system('cls')
+    os.system('clear')
+
 
 while end_of_game == False:
     clear()
