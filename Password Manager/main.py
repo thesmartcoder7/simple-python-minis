@@ -23,9 +23,11 @@ def fetch_data():
                 messagebox.showwarning(title="Entry not Found!",
                                        message=f"You have not saved details for {website.title()} yet")
             else:
+                pyperclip.copy(info['password'])
                 messagebox.showinfo(title=f"{website.title()} Details",
                                     message=f"\n\nEmail/Username: {info['email/username']}\
                                     \nPassword: {info['password']}\n\n")
+                website_entry.delete(0, END)
 
 
 # generate password
