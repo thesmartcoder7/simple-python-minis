@@ -16,6 +16,6 @@ def generate_password():
     r_numbers = [random.choice(numbers) for _ in range(7)]
     r_symbols = [random.choice(symbols) for _ in range(7)]
     gen_password = r_letters + r_numbers + r_symbols
-    random.shuffle(r_letters + r_numbers + r_symbols)
+    random.shuffle(gen_password)
     generated_password = "".join(gen_password)
     return generated_password
