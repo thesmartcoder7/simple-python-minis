@@ -9,8 +9,9 @@ import os
 today = dt.datetime.now()
 data = pandas.read_csv("birthdays.csv")
 birth_date_list = data.day.to_list()
+birth_month_list = data.month.to_list()
 
-if today.day in birth_date_list:
+if today.day in birth_date_list and today.month in birth_month_list:
     path = 'letter_templates'
     files = os.listdir(path)
     generated_file = random.choice(files)
