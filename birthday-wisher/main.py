@@ -28,11 +28,11 @@ if today.day in birth_date_list and today.month in birth_month_list:
                 message += lines
             message = message.replace("[NAME]", recipient)
 
-            sender = "webmaster@smart-code.dev"
-            my_password = "webmaster.email.smart-code"
+            sender = "your email"
+            my_password = "your password"
             receiver = email
             subject = "Its Your Birthday!!!"
-            with smtplib.SMTP("smart-code.dev") as connection:
+            with smtplib.SMTP("your domain name / smtp name ") as connection:
                 connection.starttls()
                 connection.login(user=sender, password=my_password)
                 connection.sendmail(
