@@ -1,0 +1,2 @@
+- for this project, I used Sheety api to effect changes in my Excel sheet automatically.
+- You should read the documentation, get your app_id, api_key, and other required security tokens.
