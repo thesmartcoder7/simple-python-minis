@@ -12,9 +12,9 @@ symbols = ['!', '#', '$', '%', '&', '*', '+']
 
 
 def generate_password():
-    r_letters = [random.choice(letters) for _ in range(7)]
-    r_numbers = [random.choice(numbers) for _ in range(7)]
-    r_symbols = [random.choice(symbols) for _ in range(7)]
+    r_letters = [random.choice(letters) for _ in range(3)]
+    r_numbers = [random.choice(numbers) for _ in range(3)]
+    r_symbols = [random.choice(symbols) for _ in range(3)]
     gen_password = r_letters + r_numbers + r_symbols
     random.shuffle(gen_password)
     generated_password = "".join(gen_password)
